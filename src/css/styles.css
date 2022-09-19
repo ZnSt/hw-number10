@@ -18,3 +18,21 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+ul {
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  margin-right: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
