@@ -24,7 +24,7 @@ ul {
 }
 
 .item {
-  display: flex;
+  display: block;
   align-items: center;
 }
 
