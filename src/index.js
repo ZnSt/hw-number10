@@ -52,6 +52,7 @@ function renderMarkup(data) {
 function renderOneCountry(data) {
   const markup = data
     .map(({ flags, name, capital, population, languages }) => {
+      const languagesArr = languages.map(value => value.name);
       return `<li> 
      <div class="container"> 
       <img src="${flags.png}" alt="${name}" width="30" height="25"/>
@@ -59,7 +60,7 @@ function renderOneCountry(data) {
    </div>
     <p>Capital: ${capital}</p>
     <p>Population: ${population}</p>
-    <p>Languages: ${languages[0].nativeName}</p>
+    <p>Languages: ${languagesArr}</p>
     </li>`;
     })
     .join('');
